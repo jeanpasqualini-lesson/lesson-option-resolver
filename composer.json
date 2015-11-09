@@ -1,0 +1,19 @@
+{
+    "name": "jean-pasqualini/lesson-option-resolver",
+    "require": {
+        "symfony/options-resolver": "^2.7"
+    },
+    "autoload" :
+    {
+        "psr-4" :
+        {
+            "" : "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "jean pasqualini",
+            "email": "jpasqualini75@gmail.com"
+        }
+    ]
+}
