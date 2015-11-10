@@ -20,6 +20,8 @@ class MainTest implements TestInterface
     public function runTest()
     {
         $this->testOne();
+        echo PHP_EOL."======= Test Two =============".PHP_EOL;
+        $this->testTwo();
     }
 
     public function testOne()
@@ -33,5 +35,14 @@ class MainTest implements TestInterface
         {
             echo "Exception : ".$ex->getMessage().PHP_EOL;
         }
+    }
+
+    public function testTwo()
+    {
+        $mailer = new Mailer(array(
+            "username" => "johndoe"
+        ));
+
+        echo print_r($mailer->getOptions(), true);
     }
 }
